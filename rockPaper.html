@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>choose your move</p><br>
+    <button onclick="  randnum=Math.random();
+    let computerMove=' ';
+    if(randnum>=0 && randnum<=1/3){
+        computerMove= 'rock';
+    } else if(randnum>1/3 && randnum <=2/3) {
+        computerMove='scissor';
+    } else{
+        computerMove='paper';
+    }
+    alert(`you choose rock and computer choose  ${computerMove}`);
+    if(computerMove==='rock'){
+        score=score;
+        computerScore=computerScore;
+    }
+    else if(computerMove=='paper'){
+        score=score;
+        ++computerScore;
+    }
+    else{
+        ++score;
+        computerScore=computerScore;
+
+    }
+    console.log(score);
+    
+    ">rock</button>
+
+
+    <button onclick="  randnum=Math.random();
+     computerMove=' ';
+    if(randnum>=0 && randnum<=1/3){
+        computerMove= 'rock';
+    } else if(randnum>1/3 && randnum <=2/3) {
+        computerMove='scissor';
+    } else{
+        computerMove='paper';
+    }
+    alert(`you choose paper and computer choose  ${computerMove}`);
+    if(computerMove==='rock'){
+        ++score;
+        computerScore=computerScore;
+    }
+    else if(computerMove=='paper'){
+        score=score;
+        computerScore=computerScore;
+    }
+    else{
+        score=score;
+        ++computerScore;
+    }
+    console.log(score);
+    
+    ">paper</button>
+
+
+    <button onclick="  randnum=Math.random();
+     computerMove=' ';
+    if(randnum>=0 && randnum<=1/3){
+        computerMove= 'rock';
+    } else if(randnum>1/3 && randnum <=2/3) {
+        computerMove='scissor';
+    } else{
+        computerMove='paper';
+    }
+    alert(`you choose scissor and computer choose  ${computerMove}`);
+    if(computerMove==='rock'){
+        score=score;
+        ++computerScore;
+    }
+    else if(computerMove=='paper'){
+        ++score;
+        computerScore=computerScore;
+    }
+    else{
+        score=score;
+        computerScore=computerScore;
+    }
+    console.log(score);
+    
+    ">scissor</button>
+
+
+    <button onclick=" if(score>computerScore){
+        console.log('you win');
+        console.log(`your score:${score}`);
+        console.log(`computer score:${computerScore}`);
+    }
+    else if(score==computerScore){
+        console.log('draw');
+        console.log(`your score:${score}`);
+        console.log(`computer score:${computerScore}`);
+    }
+    else{
+        console.log('computer wins');
+        console.log(`your score:${score}`);
+        console.log(`computer score:${computerScore}`);
+    }
+    
+    
+    ">result</button>
+
+
+
+    <button onclick="score=0;
+    computerScore=0;
+    console.log(`new beginning your score:${score}`);
+    console.log(`new beginning computer score:${computerScore}`);
+    
+    ">restart</button>
+    
+   
+
+    <script>
+        let randnum;
+        let score=0;
+        let computerScore=0;
+       
+    </script>
+
+</body>
+</html>
